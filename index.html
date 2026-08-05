@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل ثيمَي رَوق وعِيار — لمتاجر زد</title>
+<style>
+  :root {
+    --ink: #1c1a17;
+    --paper: #faf7f2;
+    --paper-2: #f2ede4;
+    --rule: #ddd5c8;
+    --muted: #6d675d;
+    --rawq: #b56a1c;
+    --ayar: #2f6690;
+    --code-bg: #efe9df;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ece7df; --paper: #17151300; --paper: #171513; --paper-2: #201d1a;
+      --rule: #35302a; --muted: #9c948a; --rawq: #e39b4e; --ayar: #a9c9ec; --code-bg: #221f1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ece7df; --paper: #171513; --paper-2: #201d1a;
+    --rule: #35302a; --muted: #9c948a; --rawq: #e39b4e; --ayar: #a9c9ec; --code-bg: #221f1b;
+  }
+  :root[data-theme="light"] {
+    --ink: #1c1a17; --paper: #faf7f2; --paper-2: #f2ede4;
+    --rule: #ddd5c8; --muted: #6d675d; --rawq: #b56a1c; --ayar: #2f6690; --code-bg: #efe9df;
+  }
+
+  html { direction: rtl; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Segoe UI", "Noto Naskh Arabic", "Tahoma", system-ui, sans-serif;
+    font-size: 17px; line-height: 1.95;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 74ch; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+
+  header.masthead { border-bottom: 2px solid var(--ink); padding-bottom: 1.6rem; margin-bottom: 3rem; }
+  .kicker {
+    font-size: .74rem; letter-spacing: .3em; color: var(--muted);
+    text-transform: uppercase; margin: 0 0 .9rem;
+  }
+  h1 {
+    font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.5; margin: 0 0 .6rem;
+    font-weight: 700; text-wrap: balance; padding-block: .1em;
+  }
+  .lede { color: var(--muted); margin: 0; max-width: 58ch; }
+
+  h2 {
+    font-size: 1.45rem; line-height: 1.7; margin: 3.4rem 0 1rem;
+    padding-bottom: .5rem; border-bottom: 1px solid var(--rule); font-weight: 700;
+  }
+  h3 { font-size: 1.08rem; margin: 2rem 0 .5rem; font-weight: 700; line-height: 1.8; }
+  p { margin: 0 0 1.1rem; }
+  ul, ol { margin: 0 0 1.2rem; padding-inline-start: 1.4rem; }
+  li { margin-bottom: .5rem; }
+  a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--rule); }
+  a:focus-visible { outline: 2px solid var(--rawq); outline-offset: 3px; border-radius: 2px; }
+
+  .themes { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 2rem 0 0; }
+  @media (min-width: 640px) { .themes { grid-template-columns: 1fr 1fr; } }
+  .card { border: 1px solid var(--rule); border-radius: 10px; padding: 1.3rem 1.4rem; background: var(--paper-2); }
+  .card .tag {
+    display: inline-block; font-size: .72rem; letter-spacing: .22em; padding: .2rem .7rem;
+    border-radius: 99px; margin-bottom: .7rem; font-weight: 700;
+  }
+  .card.rawq .tag { color: var(--rawq); border: 1px solid var(--rawq); }
+  .card.ayar .tag { color: var(--ayar); border: 1px solid var(--ayar); }
+  .card h3 { margin-top: 0; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+  ol.steps { list-style: none; padding: 0; counter-reset: s; }
+  ol.steps > li {
+    counter-increment: s; position: relative; padding-inline-start: 2.6rem; margin-bottom: 1.3rem;
+  }
+  ol.steps > li::before {
+    content: counter(s); position: absolute; inset-inline-start: 0; top: .35rem;
+    width: 1.8rem; height: 1.8rem; border-radius: 50%; border: 1px solid var(--rule);
+    display: grid; place-items: center; font-size: .82rem; font-weight: 700; color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { text-align: start; padding: .6rem .8rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 700; font-size: .8rem; letter-spacing: .06em; color: var(--muted); }
+  td:first-child { white-space: nowrap; font-weight: 600; }
+
+  code {
+    background: var(--code-bg); padding: .1rem .4rem; border-radius: 4px;
+    font-family: "Cascadia Mono", Consolas, monospace; font-size: .88em; direction: ltr; display: inline-block;
+  }
+  .note {
+    border-inline-start: 3px solid var(--rawq); background: var(--paper-2);
+    padding: .9rem 1.1rem; border-radius: 0 8px 8px 0; margin: 0 0 1.4rem; font-size: .95rem;
+  }
+  footer { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">دليل التاجر · إصدار ١.٠</p>
+    <h1>رَوق وعِيار — ثيمان سينمائيان لمتجرك</h1>
+    <p class="lede">كل ما تحتاجه لتشغيل الثيم وتخصيصه بالكامل من لوحة تحكم زد، بلا سطر برمجي واحد.</p>
+  </header>
+
+  <div class="themes">
+    <div class="card rawq">
+      <span class="tag">رَوق · RAWQ</span>
+      <h3>القهوة والأطعمة المختصة</h3>
+      <p>بنّي محمّص دافئ، خط عربي سينمائي، أقسام تُقدَّم كمشاهد مرقّمة ومنتجات على شريط فيلم.</p>
+    </div>
+    <div class="card ayar">
+      <span class="tag">عِيار · AYAR</span>
+      <h3>الساعات والمقتنيات الفاخرة</h3>
+      <p>كحلي ليلي بارد، خط هندسي، منتجات كعيارات بأرقام مرجعية على مسطرة مدرّجة.</p>
+    </div>
+  </div>
+
+  <h2>ما الذي يميّز الثيم</h2>
+  <p>الصفحة الرئيسية تفتح على <strong>مشهد حيّ</strong>: صورة بعمق ثلاثي الأبعاد حقيقي تستجيب لحركة مؤشر الزائر وتتنفس من نفسها، مع حبيبات فيلم وإضاءة تتبع المؤشر. على الجوال يعمل المشهد بميلان الجهاز، وإن كان جهاز الزائر ضعيفاً أو فعّل «تقليل الحركة» فيتحول تلقائياً إلى صورة ثابتة أنيقة — لا تنكسر الصفحة أبداً.</p>
+
+  <h2>التركيب في ثلاث خطوات</h2>
+  <ol class="steps">
+    <li><strong>ثبّت الثيم</strong> من سوق ثيمات زد، ثم فعّله على متجرك من «هوية المتجر ← تخصيص الثيم».</li>
+    <li><strong>ارفع شعارك</strong> من «هوية المتجر»: حقل الشعار بالعربية وحقل الشعار بالإنجليزية. إن تركتهما فارغين يظهر اسم متجرك نصّاً بخط الثيم.</li>
+    <li><strong>رتّب قائمتك الرئيسية</strong> من «الإعدادات ← القوائم»؛ الثيم يبني منها بلاطات الأقسام في الرئيسية تلقائياً بصور تصنيفاتك.</li>
+  </ol>
+  <div class="note">متجرك يظهر مكتملاً من أول لحظة: إن لم تضبط أقسام الرئيسية بعد، يعرض الثيم محتواه الافتراضي (المشهد الحيّ + شريط المزايا + بلاطات أقسامك) بدل صفحة فارغة.</div>
+
+  <h2>تغيير الألوان والخطوط</h2>
+  <p>من محرّر الثيم ← <strong>إعدادات عامة</strong>:</p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>الإعداد</th><th>ماذا يتحكم</th></tr></thead>
+      <tbody>
+        <tr><td>اللون الأساسي</td><td>الأزرار، الروابط المميزة، توهج الأيقونات، والحوافّ النشطة</td></tr>
+        <tr><td>لون الإبراز</td><td>الكلمة المضيئة في العنوان الرئيسي والأرقام والنجوم</td></tr>
+        <tr><td>الخلفية والنص</td><td>أرضية الصفحة كاملة ولون القراءة</td></tr>
+        <tr><td>الثانوي والحدود</td><td>البطاقات والفواصل والإطار المزدوج</td></tr>
+        <tr><td>نوع الخط</td><td>خط النصوص العام</td></tr>
+        <tr><td>خط العناوين</td><td>خط العناوين والشعار النصّي — ستة خطوط عربية للاختيار</td></tr>
+        <tr><td>استدارة الزوايا</td><td>نعومة زوايا البطاقات والأزرار</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>أي تغيير هنا ينعكس على التصميم كله فوراً: الكبسولة العلوية، بطاقات المنتجات، المشهد الحيّ، والتذييل.</p>
+
+  <h2>المشهد الحيّ في الواجهة</h2>
+  <p>قسم <strong>الهيرو السينمائي</strong> يعمل بوضعين:</p>
+  <ul>
+    <li><strong>المشهد الجاهز</strong> (الافتراضي): اترك حقل الصورة فارغاً فيعمل العمق ثلاثي الأبعاد الكامل.</li>
+    <li><strong>صورتك الخاصة</strong>: ارفع أي صورة، فتتحول تلقائياً إلى حركة كاميرا سينمائية بطيئة مع الحفاظ على وضوح النص فوقها.</li>
+  </ul>
+  <p>وبقية حقول القسم — السطر التمهيدي، العنوان، الكلمة المضيئة، الوصف، زرّان، وثلاث إحصائيات — كلها نصوص تكتبها بنفسك بالعربية والإنجليزية.</p>
+
+  <h2>الأقسام المتاحة للرئيسية</h2>
+  <p>أضفها أو رتّبها أو احذفها من محرّر الثيم:</p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>القسم</th><th>الاستخدام</th></tr></thead>
+      <tbody>
+        <tr><td>الهيرو السينمائي</td><td>واجهة المتجر الحيّة</td></tr>
+        <tr><td>الشريط المتحرك</td><td>أصولك أو مزاياك تمرّ بلا توقف</td></tr>
+        <tr><td>المنتجات</td><td>منزلق أو شبكة من أي مجموعة منتجات</td></tr>
+        <tr><td>التصنيفات</td><td>بلاطات أقسامك بصورها</td></tr>
+        <tr><td>العدّاد التنازلي</td><td>عرض أو دفعة محدودة بوقت انتهاء</td></tr>
+        <tr><td>بانرات مربّعة</td><td>ثلاث مجموعات مختارة بصور كبيرة</td></tr>
+        <tr><td>آراء العملاء</td><td>شهادات بنجوم</td></tr>
+        <tr><td>المزايا</td><td>أربع نقاط ثقة (شحن، دفع، إرجاع…)</td></tr>
+        <tr><td>دعوة لإجراء</td><td>حزام اشتراك أو عرض بزر</td></tr>
+        <tr><td>المعرض والفيديو والشركاء</td><td>صور وفيديو وعلامات تجارية</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>أسئلة متكرّرة</h2>
+  <h3>هل يعمل على الجوال؟</h3>
+  <p>نعم، صُمّم للجوال أولاً واختُبر على عرض ٣٩٠ بكسل: لا فيضان أفقي، والقوائم والسلة تعمل باللمس، والمشهد يستجيب لميلان الجهاز.</p>
+  <h3>هل الثيم ثنائي اللغة؟</h3>
+  <p>بالكامل — كل نص فيه له نسخة عربية وإنجليزية، والاتجاه ينقلب تلقائياً، ولك شعار مستقل لكل لغة.</p>
+  <h3>هل يؤثر المشهد الحيّ على سرعة المتجر؟</h3>
+  <p>لا. المؤثر مكتوب بشادر خفيف بلا أي مكتبة خارجية، والصور تُحمّل كسولاً، ويتوقف كل شيء تلقائياً على الأجهزة التي تطلب تقليل الحركة.</p>
+  <h3>هل أفقد إعداداتي عند تحديث الثيم؟</h3>
+  <p>لا، إعداداتك ومحتواك محفوظة في متجرك ولا يمسّها تحديث الثيم.</p>
+
+  <h2>الدعم</h2>
+  <p>للاستفسارات والدعم الفني: <a href="mailto:svsjubail@gmail.com">svsjubail@gmail.com</a> — الرد خلال يوم عمل.</p>
+
+  <footer>
+    رَوق · عِيار — ثيمان لمنصة زد. صُمّما وطُوّرا في المملكة العربية السعودية.
+  </footer>
+</div>
+
+</body>
+</html>
