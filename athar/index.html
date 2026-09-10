@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="دليل التاجر لثيم أثر على زد: ترتيب التجهيز، الأقسام الستة عشر، مواصفات الصور، وضبط اللغتين.">
+<meta name="color-scheme" content="light dark">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>دليل تاجر أثر</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#f6f7f3;
+  --card:#fdfdfb;
+  --ink:#12180f;
+  --moss:#4a5c43;
+  --brass:#976728;
+  --rule:#dee3d7;
+  --flag:#8a3f2c;
+  --flag-bg:#f6ece8;
+  --shadow:0 1px 2px rgba(18,24,15,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0d120c;
+    --card:#141a12;
+    --ink:#e9e7dc;
+    --moss:#9aa892;
+    --brass:#d6a474;
+    --rule:#242c21;
+    --flag:#dc9280;
+    --flag-bg:#221512;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0d120c;
+  --card:#141a12;
+  --ink:#e9e7dc;
+  --moss:#9aa892;
+  --brass:#d6a474;
+  --rule:#242c21;
+  --flag:#dc9280;
+  --flag-bg:#221512;
+  --shadow:none;
+}
+
+body{background:var(--paper);color:var(--ink)}
+.page{
+  direction:rtl;
+  font-family:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
+  font-weight:300;
+  font-size:16px;
+  line-height:1.85;
+  background:var(--paper);
+  color:var(--ink);
+  padding:0 0 96px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.cols{display:grid;grid-template-columns:1fr;gap:0}
+@media(min-width:1000px){
+  .cols{grid-template-columns:1fr 216px;gap:56px;align-items:start}
+}
+
+/* ---- masthead: a house's document header, not a hero ---- */
+.mast{border-bottom:1px solid var(--rule);padding:52px 0 30px;margin-bottom:44px}
+.mast .eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.22em;
+  color:var(--brass);text-transform:uppercase;margin:0 0 14px
+}
+.mast h1{
+  font-family:Amiri,"Times New Roman",serif;font-weight:400;
+  font-size:clamp(38px,6vw,60px);line-height:1.25;margin:0 0 12px;text-wrap:balance
+}
+.mast p{max-width:62ch;margin:0;color:var(--moss);font-size:17px}
+.facts{
+  display:flex;flex-wrap:wrap;gap:0;margin-top:30px;
+  border:1px solid var(--rule);border-radius:2px;background:var(--card);box-shadow:var(--shadow)
+}
+.fact{flex:1 1 150px;padding:16px 20px;border-inline-start:1px solid var(--rule)}
+.fact:first-child{border-inline-start:0}
+.fact b{
+  display:block;font-family:"IBM Plex Mono",monospace;font-weight:500;
+  font-size:24px;font-variant-numeric:tabular-nums;color:var(--brass);line-height:1.2
+}
+.fact span{font-size:12.5px;color:var(--moss);letter-spacing:.02em}
+
+/* ---- side index ---- */
+.index{position:sticky;top:24px;display:none}
+@media(min-width:1000px){.index{display:block}}
+.index h4{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--moss);margin:0 0 12px;font-weight:500
+}
+.index a{
+  display:block;padding:5px 0;color:var(--ink);text-decoration:none;
+  font-size:14px;border-inline-start:2px solid transparent;padding-inline-start:12px
+}
+.index a:hover,.index a:focus-visible{color:var(--brass);border-inline-start-color:var(--brass)}
+
+/* ---- sections ---- */
+h2{
+  font-family:Amiri,"Times New Roman",serif;font-weight:400;
+  font-size:clamp(27px,3.6vw,36px);line-height:1.35;margin:64px 0 6px;
+  scroll-margin-top:24px;text-wrap:balance
+}
+h2:first-of-type{margin-top:0}
+h2 + .lede{color:var(--moss);margin:0 0 26px;max-width:64ch;font-size:15.5px}
+h3{
+  font-family:"IBM Plex Sans Arabic",sans-serif;font-weight:600;
+  font-size:17px;margin:34px 0 8px;line-height:1.5
+}
+p{max-width:66ch;margin:0 0 16px}
+a{color:var(--brass)}
+
+/* ---- the setup sequence: numbered because the order genuinely matters ---- */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps > li{
+  counter-increment:s;position:relative;padding-inline-start:52px;
+  padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid var(--rule)
+}
+.steps > li:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.steps > li::before{
+  content:counter(s,decimal-leading-zero);
+  position:absolute;inset-inline-start:0;top:2px;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:500;
+  color:var(--brass);letter-spacing:.05em
+}
+.steps h3{margin-top:0}
+.steps p:last-child{margin-bottom:0}
+
+/* ---- section reference: a table, not a sequence ---- */
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:2px;background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14.5px}
+th,td{text-align:start;padding:12px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{
+  font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--moss);white-space:nowrap
+}
+tbody tr:last-child td{border-bottom:0}
+td.name{font-weight:500;white-space:nowrap}
+td.fields{
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
+  color:var(--moss);text-align:center;white-space:nowrap
+}
+.src{
+  display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:2px;
+  border:1px solid var(--rule);color:var(--moss);white-space:nowrap;line-height:1.7
+}
+.src.zid{border-color:var(--brass);color:var(--brass)}
+
+/* ---- the one thing that needs lifting: the warnings ---- */
+.flag{
+  border-inline-start:3px solid var(--flag);background:var(--flag-bg);
+  padding:16px 20px;margin:0 0 18px;border-radius:0 2px 2px 0
+}
+.flag b{color:var(--flag);font-weight:600}
+.flag p{margin:0;max-width:64ch}
+.flag p + p{margin-top:10px}
+
+dl{margin:0}
+dt{font-weight:600;margin-top:20px}
+dd{margin:4px 0 0;color:var(--moss);max-width:64ch}
+
+code{
+  font-family:"IBM Plex Mono",monospace;font-size:.88em;
+  background:var(--card);border:1px solid var(--rule);
+  border-radius:2px;padding:1px 5px;direction:ltr;display:inline-block
+}
+.foot{
+  margin-top:72px;padding-top:22px;border-top:1px solid var(--rule);
+  color:var(--moss);font-size:13.5px
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="wrap">
+
+  <header class="mast">
+    <p class="eyebrow">ATHAR&nbsp;&nbsp;/&nbsp;&nbsp;ZID THEME</p>
+    <h1>دليل تاجر أثر</h1>
+    <p>كل ما تحتاج معرفته لتشغيل متجرك على ثيم أثر: من أين تأتي البيانات، ما الذي تكتبه بنفسك، وكيف تضبط اللغتين. اقرأه مرة واحدة قبل أن تبدأ، وستوفر على نفسك ساعة.</p>
+    <div class="facts">
+      <div class="fact"><b>16</b><span>قسما جاهزا</span></div>
+      <div class="fact"><b>278</b><span>حقلا تتحكم فيه</span></div>
+      <div class="fact"><b>2</b><span>لغة مستقلة</span></div>
+      <div class="fact"><b>0</b><span>سطر برمجة</span></div>
+    </div>
+  </header>
+
+  <div class="cols">
+  <main>
+
+    <h2 id="start">البداية</h2>
+    <p class="lede">خمس خطوات بالترتيب. الترتيب مقصود: كل خطوة تعتمد على التي قبلها.</p>
+
+    <ol class="steps">
+      <li>
+        <h3>فعّل الثيم</h3>
+        <p>من لوحة زد: <strong>المتجر الإلكتروني ← الثيمات</strong>، ثم فعّل أثر. سيظهر متجرك فورا بأقسام جاهزة ومحتوى تجريبي — هذا مقصود، فأنت ترى الشكل النهائي قبل أن تكتب حرفا.</p>
+      </li>
+      <li>
+        <h3>ارفع منتجاتك أولا</h3>
+        <p>أثر يبني نفسه من كتالوج زد، لا من صور ثابتة. قبل أن تضبط الأقسام، أدخل منتجاتك وصنّفها. الأقسام التي تعرض عطورا ستمتلئ وحدها.</p>
+      </li>
+      <li>
+        <h3>اربط التصنيفات بالعوالم</h3>
+        <p>الثيم يقسّم العطور إلى ثمانية «عوالم» (عنبري، زهري، خشبي، منعش، عود، مسك، توابل، حلو). من <strong>المظهر ← أثر: العوالم والدور</strong> تختار أي تصنيف من تصنيفاتك يقابل كل عالم. بدون هذا الربط تظهر العوالم فارغة.</p>
+      </li>
+      <li>
+        <h3>اضبط الهوية</h3>
+        <p>الاسم والشعار يأتيان من إعدادات متجرك في زد، لا من الثيم. أما الألوان والخط فمن <strong>المظهر ← ألوان الثيم</strong> و<strong>الخط</strong>.</p>
+      </li>
+      <li>
+        <h3>انشر</h3>
+        <p>لا شيء يظهر لزبائنك قبل الضغط على <strong>نشر</strong> في أعلى المحرر. المسودة تبقى عندك وحدك.</p>
+      </li>
+    </ol>
+
+    <h2 id="langs">اللغتان</h2>
+    <p class="lede">أهم نقطة في الدليل كله. اقرأها مرتين.</p>
+
+    <div class="flag">
+      <p><b>زد يحفظ إعدادات كل لغة على حدة.</b> ترتيب الأقسام، ونصوصها، وحتى وجودها من عدمه — كل ذلك منفصل تماما بين العربية والإنجليزية.</p>
+      <p>يعني: إذا أضفت قسما وأنت على العربية، لن يظهر في المتجر الإنجليزي إطلاقا. بدّل اللغة من أعلى المحرر، أضفه مرة ثانية، وانشر مرة ثانية.</p>
+    </div>
+
+    <p>النصوص التي لم تلمسها تترجم نفسها: الثيم يحمل نسخة إنجليزية لكل نص يشحنه، من عناوين الأقسام إلى أسماء النوتات ومصطلحات الفوحان والثبات. لكن اللحظة التي تكتب فيها نصك الخاص، يصبح ذلك النص ملكك وحدك في تلك اللغة — فاكتبه في اللغتين.</p>
+
+    <p>أسماء المنتجات والتصنيفات والماركات تأتي من زد، فترجمتها تتم في لوحة زد لا في الثيم.</p>
+
+    <h2 id="sections">الأقسام الستة عشر</h2>
+    <p class="lede">الرقم بجانب كل قسم هو عدد الحقول التي تتحكم فيها داخله. وعمود «المصدر» يقول لك من أين يأتي المحتوى.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>القسم</th><th>ماذا يفعل</th><th>المصدر</th><th>حقول</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">الأطلس</td><td>واجهة المتجر: زجاجات تدور حول عطر رئيسي، ومبدّل للعوالم الثمانية</td><td><span class="src zid">منتجات زد</span></td><td class="fields">15</td></tr>
+          <tr><td class="name">شريط الوعود</td><td>أربعة وعود قصيرة تحت الواجهة: الشحن، الأصالة، العينات</td><td><span class="src">نصك</span></td><td class="fields">5</td></tr>
+          <tr><td class="name">العوالم</td><td>العائلات العطرية الثماني، كل واحدة ببطاقتها</td><td><span class="src zid">تصنيفات زد</span></td><td class="fields">7</td></tr>
+          <tr><td class="name">الدور</td><td>الدور العطرية التي تبيعها</td><td><span class="src zid">ماركات زد</span></td><td class="fields">5</td></tr>
+          <tr><td class="name">المختارات</td><td>عطور تختارها بنفسك للواجهة</td><td><span class="src zid">منتجات زد</span></td><td class="fields">6</td></tr>
+          <tr><td class="name">مرشد العطر</td><td>أسئلة قصيرة ترشد الزائر إلى عطره</td><td><span class="src">نصك</span></td><td class="fields">7</td></tr>
+          <tr><td class="name">الخزانة</td><td>كل العطور مع فلاتر النوتات والعوالم والأسعار</td><td><span class="src zid">منتجات زد</span></td><td class="fields">14</td></tr>
+          <tr><td class="name">آراء العملاء</td><td>عارض آراء يتبدل تلقائيا</td><td><span class="src">نصك</span></td><td class="fields">12</td></tr>
+          <tr><td class="name">المقارنة</td><td>يضع عطرين وجها لوجه: النوتات والفوحان والثبات</td><td><span class="src zid">منتجات زد</span></td><td class="fields">10</td></tr>
+          <tr><td class="name">جرب وأهدِ</td><td>عينات الملي والطقم التجريبي وعلبة الإهداء والبطاقة</td><td><span class="src zid">منتجات زد</span></td><td class="fields">22</td></tr>
+          <tr><td class="name">دفتر أثر</td><td>مقالات قصيرة عن العطر تكتبها في القسم نفسه</td><td><span class="src">نصك</span></td><td class="fields">11</td></tr>
+          <tr><td class="name">الأسئلة الشائعة</td><td>ثمانية أسئلة جاهزة تعدّلها كما تشاء</td><td><span class="src">نصك</span></td><td class="fields">11</td></tr>
+          <tr><td class="name">النشرة البريدية</td><td>حقل اشتراك بالبريد</td><td><span class="src">نصك</span></td><td class="fields">7</td></tr>
+          <tr><td class="name">الختام</td><td>سطر أخير ودعوة للتسوق</td><td><span class="src">نصك</span></td><td class="fields">8</td></tr>
+          <tr><td class="name">العد التنازلي</td><td>عرض بوقت ينتهي. غير موجود بالواجهة — أضفه وقت الحملة</td><td><span class="src">نصك</span></td><td class="fields">14</td></tr>
+          <tr><td class="name">الفيلم</td><td>شريط فيديو عريض. غير موجود بالواجهة — أضفه إن أردته</td><td><span class="src">نصك</span></td><td class="fields">10</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>القسمان اللذان تضيفهما بنفسك</h3>
+    <p>العد التنازلي والفيلم لا يظهران في متجرك تلقائيا، لأن أغلب المتاجر لا تحتاجهما طوال الوقت. تجدهما في مكتبة الأقسام: <strong>إضافة قسم</strong> في أسفل قائمة أقسام الصفحة الرئيسية.</p>
+
+    <h2 id="film">الفيلم والعد التنازلي</h2>
+    <p class="lede">القسمان الوحيدان اللذان لهما سلوك خاص يستحق الشرح.</p>
+
+    <dl>
+      <dt>الفيلم يعمل من أول لحظة</dt>
+      <dd>القسم يأتي ومعه مقطع من الثيم نفسه، فتراه شغالا فور إضافته. إن كان لديك فيلم خاص بدارك، ضع رابط ملف MP4 مباشرا في حقل الرابط وسيحل محله. اتركه فارغا ليبقى مقطع الثيم.</dd>
+
+      <dt>لماذا رابط مباشر ولا رفع ملف</dt>
+      <dd>زد لا يوفر مكتبة وسائط ترفع فيها ملفات الفيديو. فإن أردت فيلمك الخاص، استضفه في أي مكان يعطيك رابطا مباشرا ينتهي بـ<code>.mp4</code>، ثم الصق الرابط هنا.</dd>
+
+      <dt>الفيلم لا يكلّف زائرك شيئا</dt>
+      <dd>لا يبدأ التحميل إلا حين يقترب القسم من الشاشة، ويتوقف حين يبتعد، ويشتغل صامتا. الزائر الذي لا يصل إليه لا يحمّل بايتا واحدا.</dd>
+
+      <dt>وقت انتهاء العرض بتوقيت الرياض</dt>
+      <dd>اكتب الموعد بصيغة <code>2026-09-20 23:59</code>. الساعة تُحسب بتوقيت الرياض لكل الزوار، فينتهي العرض على الجميع في اللحظة نفسها.</dd>
+
+      <dt>ماذا يحدث بعد انتهاء الوقت</dt>
+      <dd>أنت تختار: إما أن يظهر نص «انتهى العرض»، أو يختفي القسم كله. لا تحتاج للدخول وحذفه بنفسك.</dd>
+    </dl>
+
+    <h2 id="images">الصور</h2>
+    <p class="lede">أثر يعرض العطر أكبر وأوضح من أي ثيم آخر، فالصورة الضعيفة تنكشف فيه. هذا القسم يستحق دقيقتين قبل أن تصوّر.</p>
+
+    <h3>اختر أسلوب التصوير أولا</h3>
+    <p>من <strong>المظهر ← أثر: العوالم والدور ← صور العطور</strong> تختار واحدا من أسلوبين. هذا الاختيار يحدد كيف تصوّر، فاحسمه قبل جلسة التصوير لا بعدها.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>الأسلوب</th><th>كيف تصوّر</th><th>يناسب</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">مفرغة</td>
+            <td>الزجاجة على خلفية <strong>سوداء تماما</strong>، أو مقصوصة على خلفية شفافة</td>
+            <td>الشكل الموقّع لأثر: الزجاجة تطفو في الفضاء الداكن بلا إطار</td>
+          </tr>
+          <tr>
+            <td class="name">عادية</td>
+            <td>تصوير استوديو معتاد على خلفية <strong>بيضاء أو رمادية</strong></td>
+            <td>من عنده صور جاهزة ولا يريد إعادة التصوير</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flag">
+      <p><b>لا تخلط الأسلوبين.</b> الوضع المفرغ يذيب الأسود في خلفية الثيم ليجعل الزجاجة تطفو. إن وضعت فيه صورة بخلفية بيضاء، ستنفجر الخلفية بياضا وتبتلع الزجاجة. والعكس: صورة مفرغة داخل الوضع العادي تظهر بإطار حولها بلا داع.</p>
+    </div>
+
+    <h3>المقاس والصيغة</h3>
+    <p>المرجع هو صور الثيم نفسه، وهذه مواصفاتها بالضبط:</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>الخاصية</th><th>المطلوب</th><th>لماذا</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">المقاس</td><td><code>1024 × 1536</code></td><td>نسبة ٢:٣ طولية. الثيم يقص كل صورة على هذه النسبة، فالصورة المربعة أو العرضية ستُقتطع</td></tr>
+          <tr><td class="name">الصيغة</td><td><code>WebP</code> أو <code>PNG</code></td><td>كلاهما يحفظ الشفافية. <code>JPG</code> لا يحفظها، فلا يصلح للوضع المفرغ</td></tr>
+          <tr><td class="name">الحجم</td><td>أقل من <code>250 KB</code></td><td>صور الثيم بين ١٦٠ و٢٣٠ كيلوبايت بهذه الجودة. الصورة الأثقل تبطئ الواجهة بلا مقابل مرئي</td></tr>
+          <tr><td class="name">الخلفية</td><td>شفافة أو سوداء</td><td>في الوضع المفرغ فقط. في الوضع العادي أي خلفية فاتحة تعمل</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>ارفع الصورة بأكبر مقاس عندك مرة واحدة، وزد يولّد المقاسات الأصغر تلقائيا. الثيم يطلب من زد المقاس المناسب لكل موضع — من ٦٤ بكسل لمصغّرات الخيارات إلى ١٦٠٠ للعرض المكبّر — فلا داعي أن ترفع نسخا متعددة.</p>
+
+    <h3>كيف تبدو الصورة الجيدة هنا</h3>
+    <dl>
+      <dt>زجاجة واحدة في الإطار</dt>
+      <dd>الأطلس يعرض أربع زجاجات معا وهي تدور. صورة فيها زجاجة وعلبتها وبطاقتها ستبدو مزدحمة بجانب غيرها.</dd>
+
+      <dt>الزجاجة واقفة ومتوسطة</dt>
+      <dd>اتركها في وسط الإطار مع هامش من الأعلى والأسفل. الثيم يميلها ويحركها برفق، والهامش يمنع قص الغطاء أو القاعدة.</dd>
+
+      <dt>إضاءة جانبية لا أمامية</dt>
+      <dd>الضوء من الجانب يُظهر انكسار الزجاج والسائل بداخله. الفلاش الأمامي يسطّح الزجاجة ويعكس بقعة بيضاء في منتصفها.</dd>
+
+      <dt>لا ظل مرسوم تحتها</dt>
+      <dd>الثيم يضيف ظله الخاص أسفل كل زجاجة. الظل المصوّر في الصورة يتضاعف ويبدو غريبا.</dd>
+
+      <dt>لا نصوص ولا شعارات محروقة في الصورة</dt>
+      <dd>الاسم والسعر والدار تُكتب بخط الثيم فوق الصورة. النص داخل الصورة لن يترجم ولن يُقرأ على الجوال.</dd>
+    </dl>
+
+    <h3>الصور الأخرى</h3>
+    <dl>
+      <dt>شعار المتجر</dt>
+      <dd><code>PNG</code> شفاف، عرض ٤٠٠ بكسل على الأقل. يُعرض بعرض ٢١٢ في الرأس، فالشعار الصغير يظهر مهترئا.</dd>
+
+      <dt>شعارات الدور</dt>
+      <dd><code>PNG</code> شفاف بعرض ٤٨٠ فأكثر، ويُعرض بـ٢٤٠.</dd>
+
+      <dt>أغلفة المقالات</dt>
+      <dd>عرضية، ١٤٤٠ بكسل عرضا فأكثر، ويُعرض الغلاف بـ٧٢٠.</dd>
+
+      <dt>غلاف الفيلم</dt>
+      <dd>نسبة ١٦:٩، ويكفي ١٢٨٠ × ٧٢٠. إن تركته فارغا سيأخذ الثيم أول لقطة من المقطع.</dd>
+    </dl>
+
+    <h2 id="data">من أين تأتي التفاصيل</h2>
+    <p class="lede">أثر يعرض عن كل عطر أكثر مما يعرضه متجر عادي. هذه خريطة المصادر.</p>
+
+    <dl>
+      <dt>النوتات والفوحان والثبات</dt>
+      <dd>حقول إضافية على المنتج في زد. املأها وسيقرأها الثيم ويبني منها الفلاتر ورحلة العطر والمقارنة. اتركها فارغة وسيتخطاها بهدوء دون أن ينكسر شيء.</dd>
+
+      <dt>الأحجام والتراكيز</dt>
+      <dd>خيارات المنتج في زد. أضف «٢ مل» و«٥٠ مل» و«١٠٠ مل» كخيارات وسيعرضها الثيم بشكله الخاص.</dd>
+
+      <dt>الأسعار والمخزون والسلة والدفع</dt>
+      <dd>من زد بالكامل. الثيم يعرض فقط ولا يغيّر شيئا. المنتج غير المتوفر لا يُباع.</dd>
+
+      <dt>مصطلحات العطر</dt>
+      <dd>اثنان وثلاثون كلمة يستعملها الثيم (البداية، القلب، الأثر، أوقات الاستعمال، الأحجام…) تجدها كلها في <strong>المظهر ← أثر: المصطلحات</strong>. غيّرها إن كانت دارك تسمّي الأشياء بأسماء أخرى.</dd>
+    </dl>
+
+    <h2 id="notes">ملاحظات تختصر عليك الوقت</h2>
+
+    <div class="flag">
+      <p><b>لا تنشر قبل أن تراجع اللغتين.</b> أكثر خطأ يتكرر: تاجر يضبط العربية بإتقان وينسى أن المتجر الإنجليزي ما زال على الترتيب القديم.</p>
+    </div>
+
+    <p><strong>الصفحة الرئيسية عشرة أقسام لا أكثر.</strong> هذا اختيار مقصود: الصفحة الطويلة المزدحمة تُتعِب الزائر ولا تبيع. لو أضفت قسما، فكّر أي قسم تحذف مقابله.</p>
+
+    <p><strong>الصفحات الداخلية جاهزة بلا عمل منك.</strong> صفحة المنتج، الخزانة، السلة، المدونة، الأسئلة، صفحات السياسات، وصفحة الخطأ ٤٠٤ — كلها بشكل أثر ولغتين، وتشتغل من أول لحظة.</p>
+
+    <p><strong>الحركة تحترم إعدادات جهاز الزائر.</strong> من كان جهازه يطلب تقليل الحركة يرى الثيم ساكنا. لا تحتاج ضبط شيء.</p>
+
+    <p><strong>الخلفيات اختيارية لكل قسم.</strong> كل قسم فيه إعداد خلفية بقوّة قابلة للتحكم. استعملها بحساب: خلفية في كل قسم تعني لا خلفية في أي قسم.</p>
+
+    <h2 id="help">حين يقف شيء</h2>
+    <dl>
+      <dt>العوالم تظهر فارغة</dt>
+      <dd>التصنيفات غير مربوطة. راجع <strong>المظهر ← أثر: العوالم والدور</strong>.</dd>
+
+      <dt>قسم أضفته لا يظهر للزوار</dt>
+      <dd>لم يُنشر، أو أُضيف في لغة واحدة فقط.</dd>
+
+      <dt>عنوان الصفحة يظهر فارغا في نتائج البحث</dt>
+      <dd>هذا من إعدادات تحسين محركات البحث في لوحة زد، لا من الثيم. املأها من <strong>المتجر الإلكتروني ← تحسين محركات البحث</strong>.</dd>
+
+      <dt>الفيلم لا يعمل بعد وضع رابطك</dt>
+      <dd>تأكد أن الرابط مباشر لملف <code>.mp4</code> وليس رابط صفحة تعرض الفيديو.</dd>
+
+      <dt>الزجاجات تظهر كبقع بيضاء</dt>
+      <dd>صورك بخلفية بيضاء والثيم على الوضع المفرغ. بدّله إلى «عادية» من إعدادات صور العطور.</dd>
+
+      <dt>الزجاجة مقصوصة من الأعلى أو الأسفل</dt>
+      <dd>الصورة ليست بنسبة ٢:٣ طولية. أعد قصّها على <code>1024 × 1536</code>.</dd>
+    </dl>
+
+    <p class="foot">ثيم أثر — دليل التاجر. الأرقام في هذا الدليل مأخوذة من الثيم نفسه، لا من التقدير.</p>
+
+  </main>
+
+  <nav class="index" aria-label="فهرس الدليل">
+    <h4>الفهرس</h4>
+    <a href="#start">البداية</a>
+    <a href="#langs">اللغتان</a>
+    <a href="#sections">الأقسام الستة عشر</a>
+    <a href="#film">الفيلم والعد التنازلي</a>
+    <a href="#images">الصور</a>
+    <a href="#data">من أين تأتي التفاصيل</a>
+    <a href="#notes">ملاحظات</a>
+    <a href="#help">حين يقف شيء</a>
+  </nav>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
